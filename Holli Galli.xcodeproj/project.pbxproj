@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,9 +14,14 @@
 		6A7FAC562426D0170059D9D2 /* Holli_Galli.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6A7FAC542426D0170059D9D2 /* Holli_Galli.xcdatamodeld */; };
 		6A7FAC582426D0190059D9D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A7FAC572426D0190059D9D2 /* Assets.xcassets */; };
 		6A7FAC5B2426D0190059D9D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A7FAC592426D0190059D9D2 /* LaunchScreen.storyboard */; };
+		6A7FAC682426DA240059D9D2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A7FAC672426DA240059D9D2 /* GoogleService-Info.plist */; };
+		DCC1D39C9F4521E9882EA271 /* Pods_Holli_Galli.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D1695C7C92FA58E2EF11F4 /* Pods_Holli_Galli.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00D1695C7C92FA58E2EF11F4 /* Pods_Holli_Galli.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Holli_Galli.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08B64CA29D6D5F806EE914B6 /* Pods-Holli Galli.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Holli Galli.debug.xcconfig"; path = "Target Support Files/Pods-Holli Galli/Pods-Holli Galli.debug.xcconfig"; sourceTree = "<group>"; };
+		65FC7A83287349D4BDCFD935 /* Pods-Holli Galli.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Holli Galli.release.xcconfig"; path = "Target Support Files/Pods-Holli Galli/Pods-Holli Galli.release.xcconfig"; sourceTree = "<group>"; };
 		6A7FAC482426D0170059D9D2 /* Holli Galli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Holli Galli.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A7FAC4B2426D0170059D9D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A7FAC4D2426D0170059D9D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +31,7 @@
 		6A7FAC572426D0190059D9D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A7FAC5A2426D0190059D9D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A7FAC5C2426D0190059D9D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A7FAC672426DA240059D9D2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCC1D39C9F4521E9882EA271 /* Pods_Holli_Galli.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +51,8 @@
 			children = (
 				6A7FAC4A2426D0170059D9D2 /* Holli Galli */,
 				6A7FAC492426D0170059D9D2 /* Products */,
+				DFF8EFC99D822A99E6CAC6EC /* Pods */,
+				6B8E767BAD1BC27E1364D401 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,9 +74,27 @@
 				6A7FAC572426D0190059D9D2 /* Assets.xcassets */,
 				6A7FAC592426D0190059D9D2 /* LaunchScreen.storyboard */,
 				6A7FAC5C2426D0190059D9D2 /* Info.plist */,
+				6A7FAC672426DA240059D9D2 /* GoogleService-Info.plist */,
 				6A7FAC542426D0170059D9D2 /* Holli_Galli.xcdatamodeld */,
 			);
 			path = "Holli Galli";
+			sourceTree = "<group>";
+		};
+		6B8E767BAD1BC27E1364D401 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00D1695C7C92FA58E2EF11F4 /* Pods_Holli_Galli.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFF8EFC99D822A99E6CAC6EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08B64CA29D6D5F806EE914B6 /* Pods-Holli Galli.debug.xcconfig */,
+				65FC7A83287349D4BDCFD935 /* Pods-Holli Galli.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A7FAC5F2426D0190059D9D2 /* Build configuration list for PBXNativeTarget "Holli Galli" */;
 			buildPhases = (
+				EA5C11AD162A150DC9EC7C90 /* [CP] Check Pods Manifest.lock */,
 				6A7FAC442426D0170059D9D2 /* Sources */,
 				6A7FAC452426D0170059D9D2 /* Frameworks */,
 				6A7FAC462426D0170059D9D2 /* Resources */,
+				E9EA53647C2AC487C4162B9D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,12 +158,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A7FAC5B2426D0190059D9D2 /* LaunchScreen.storyboard in Resources */,
+				6A7FAC682426DA240059D9D2 /* GoogleService-Info.plist in Resources */,
 				6A7FAC582426D0190059D9D2 /* Assets.xcassets in Resources */,
 				6A7FAC532426D0170059D9D2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E9EA53647C2AC487C4162B9D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Holli Galli/Pods-Holli Galli-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Holli Galli/Pods-Holli Galli-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Holli Galli/Pods-Holli Galli-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA5C11AD162A150DC9EC7C90 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Holli Galli-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6A7FAC442426D0170059D9D2 /* Sources */ = {
@@ -286,6 +358,7 @@
 		};
 		6A7FAC602426D0190059D9D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08B64CA29D6D5F806EE914B6 /* Pods-Holli Galli.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +377,7 @@
 		};
 		6A7FAC612426D0190059D9D2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65FC7A83287349D4BDCFD935 /* Pods-Holli Galli.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
