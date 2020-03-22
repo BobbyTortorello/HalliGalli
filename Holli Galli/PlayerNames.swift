@@ -12,20 +12,31 @@ import FirebaseStorage
 
 struct PlayerNames {
     
-    var name: String
+    var playerName: String
+    var playerReady: Bool
     
     var dictionaryString: [String: Any] {
         return [
-            "playerName": name
+            "playerName": playerName
+        ]
+    }
+    
+    var dictionaryBool: [Bool: Any] {
+        return [
+            Bool(): playerReady
         ]
     }
 }
 
 extension PlayerNames: DocumentSerializable {
     init?(dictionary: [String: Any]) {
-        guard let name = dictionary["playerName"] as? String else {return nil}
+        guard let playerName = dictionary["playerName"] as? String else {return nil}
         self.init(
-            name: name
+            playerName: playerName
         )
+    }
+    
+    init?(dictionaryB: [Bool: Any]) {
+        guard (dictionaryB[playerReady] as? Bool) != nil else {return nil}
     }
 }
