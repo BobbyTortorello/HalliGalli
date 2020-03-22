@@ -16,16 +16,7 @@ class LobbyViewController: UIViewController, UITableViewDataSource, UITableViewD
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        let alert = UIAlertController(title: "What is your name?", message: "Enter name in field below!", preferredStyle: .alert)
-        alert.addTextField(configurationHandler: nil)
-        let okay = UIAlertAction(title: "Okay", style: .default) { (action) in
-        let textField = alert.textFields![0]
-            self.playerNames.append(textField.text!)
-            self.playerTableView.reloadData()
-
-        }
-        alert.addAction(okay)
-        present(alert, animated: true, completion: nil)
+        
     }
     
 

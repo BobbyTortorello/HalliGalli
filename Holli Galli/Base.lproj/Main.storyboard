@@ -28,7 +28,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="56"/>
                                 <state key="normal" title="Join Game"/>
                                 <connections>
-                                    <segue destination="w64-4L-f2K" kind="show" id="Q65-ew-ysT"/>
+                                    <action selector="joinGameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IRf-4H-K1h"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -44,7 +44,7 @@
         <!--Lobby View Controller-->
         <scene sceneID="r6h-Ht-LZj">
             <objects>
-                <viewController id="w64-4L-f2K" customClass="LobbyViewController" customModule="Holli_Galli" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="lobbyVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="w64-4L-f2K" customClass="LobbyViewController" customModule="Holli_Galli" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8pn-i1-i0P">
                         <rect key="frame" x="0.0" y="0.0" width="1080" height="810"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
