@@ -41,24 +41,50 @@
             </objects>
             <point key="canvasLocation" x="856.66666666666663" y="112.59259259259258"/>
         </scene>
-        <!--View Controller-->
+        <!--Lobby View Controller-->
         <scene sceneID="r6h-Ht-LZj">
             <objects>
-                <viewController id="w64-4L-f2K" sceneMemberID="viewController">
+                <viewController id="w64-4L-f2K" customClass="LobbyViewController" customModule="Holli_Galli" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8pn-i1-i0P">
                         <rect key="frame" x="0.0" y="0.0" width="1080" height="810"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bOO-AJ-Poh">
-                                <rect key="frame" x="0.0" y="50" width="383" height="543"/>
+                                <rect key="frame" x="0.0" y="50" width="538" height="760"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="zOQ-k1-3w4" style="IBUITableViewCellStyleDefault" id="nRS-gS-B1c">
+                                        <rect key="frame" x="0.0" y="28" width="538" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nRS-gS-B1c" id="pKm-Uf-PlD">
+                                            <rect key="frame" x="0.0" y="0.0" width="538" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zOQ-k1-3w4">
+                                                    <rect key="frame" x="15" y="0.0" width="508" height="60"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="w64-4L-f2K" id="uEJ-tn-R1u"/>
+                                    <outlet property="delegate" destination="w64-4L-f2K" id="vzb-Pe-piB"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="t1k-VA-unt"/>
                     </view>
                     <navigationItem key="navigationItem" id="yWU-Fv-sWr"/>
+                    <connections>
+                        <outlet property="playerTableView" destination="bOO-AJ-Poh" id="gB6-0g-Wif"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Hz-zI-NPb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
