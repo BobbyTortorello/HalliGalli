@@ -28,7 +28,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="56"/>
                                 <state key="normal" title="Join Game"/>
                                 <connections>
-                                    <action selector="joinGameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IRf-4H-K1h"/>
+                                    <action selector="joinGameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PI8-Cb-eBH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -77,6 +77,15 @@
                                     <outlet property="delegate" destination="w64-4L-f2K" id="vzb-Pe-piB"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gX-zg-gbj">
+                                <rect key="frame" x="653" y="108" width="304" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="67"/>
+                                <state key="normal" title="Ready   Up"/>
+                                <connections>
+                                    <action selector="readyUpButton:" destination="w64-4L-f2K" eventType="touchUpInside" id="T2b-3f-wYh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="t1k-VA-unt"/>
