@@ -11,10 +11,15 @@ import Firebase
 import FirebaseStorage
 import FirebaseFirestore
 
+
 class ViewController: UIViewController {
 
     let db = Firestore.firestore()
     var playerName = String()
+    var playerDelegate: SpecificPlayerName?
+    
+    let defaults = UserDefaults.standard
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -27,7 +32,8 @@ class ViewController: UIViewController {
             let textField = alert.textFields![0]
             self.playerName = textField.text!
             self.db.collection("playerNames").document("\(self.playerName)").setData([
-                "playerName" : self.playerName
+                "playerName" : self.playerName,
+                "playerReady" : false
             ]) { err in
                 if let err = err {
                     print("Error adding document: \(err)")
@@ -38,12 +44,15 @@ class ViewController: UIViewController {
                 } else {
                     let vc = self.storyboard?.instantiateViewController(identifier: "lobbyVC")
                     self.navigationController?.show(vc!, sender: nil)
+                    self.defaults.set(textField.text!, forKey: "playerName")
                 }
             }
         }
         alert.addAction(okay)
         present(alert, animated: true, completion: nil)
     }
-    
 }
 
+protocol SpecificPlayerName: class {
+    func addingPlayerName(playerName: String)
+}

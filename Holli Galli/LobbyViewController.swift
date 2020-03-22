@@ -13,11 +13,18 @@ import FirebaseFirestore
 
 struct PlayerName {
     static var playerName = [QueryDocumentSnapshot]()
+    static var playerReady = [QueryDocumentSnapshot]()
 }
 
-class LobbyViewController: UIViewController, UITableViewDelegate {
+class LobbyViewController: UIViewController, UITableViewDelegate, SpecificPlayerName {
+    
+    func addingPlayerName(playerName: String) {
+        
+    }
     
     private var playerName = PlayerName.playerName
+    var playerReady = PlayerName.playerReady
+
     let db = Firestore.firestore()
     
     private var playerNames: [PlayerNames] = []
@@ -26,6 +33,20 @@ class LobbyViewController: UIViewController, UITableViewDelegate {
     @IBOutlet weak var playerTableView: UITableView!
     let backgroundView = UIImageView()
     
+    var specifcPlayerName = String()
+    
+    var defaults = UserDefaults.standard
+        
+    @IBAction func readyUpButton(_ sender: UIButton)
+    {
+        _ = playerTableView.indexPathForSelectedRow
+        
+        db.collection("playerNames").document("\(defaults.object(forKey: "playerName") ?? String())").updateData([
+            "playerReady": true
+        ])
+    }
+    
+    //MARK: Start of FireBase Functions
     fileprivate var query: Query? {
         didSet {
           if let listener = listener {
@@ -82,6 +103,8 @@ class LobbyViewController: UIViewController, UITableViewDelegate {
         return firestore.collection("playerNames").limit(to: 99)
       }
     
+    
+    //MARK: ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         query = baseQuery()
@@ -98,14 +121,6 @@ class LobbyViewController: UIViewController, UITableViewDelegate {
         super.viewWillDisappear(animated)
         stopObserving()
       }//end of viewWillDisappear
-    
-    @IBAction func readyUpButton(_ sender: UIButton)
-    {
-        
-    }
-    
-    
-    
 }//end of class
 
 extension LobbyViewController: UITableViewDataSource {
@@ -117,10 +132,7 @@ extension LobbyViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = playerNames[indexPath.row].name
+        cell.textLabel?.text = playerNames[indexPath.row].playerName
         return cell
     }
-    
-    
-    
 }

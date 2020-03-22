@@ -29,14 +29,16 @@ struct PlayerNames {
 }
 
 extension PlayerNames: DocumentSerializable {
+//    init?(dictionaryB: [Bool: Any]) {
+//        guard (dictionaryB[playerReady] as? Bool) != nil else {return nil}
+//    }
+//
     init?(dictionary: [String: Any]) {
-        guard let playerName = dictionary["playerName"] as? String else {return nil}
+        guard let playerName = dictionary["playerName"] as? String,
+            let playerReady = dictionary["playerReady"] as? Bool else {return nil}
         self.init(
-            playerName: playerName
+            playerName: playerName,
+            playerReady: playerReady
         )
-    }
-    
-    init?(dictionaryB: [Bool: Any]) {
-        guard (dictionaryB[playerReady] as? Bool) != nil else {return nil}
     }
 }
