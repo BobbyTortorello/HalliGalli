@@ -86,19 +86,27 @@ class LobbyViewController: UIViewController, UITableViewDelegate {
         super.viewDidLoad()
         query = baseQuery()
         self.navigationItem.hidesBackButton = true
-    }
+    }//end of viewDidLoad
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.setNeedsStatusBarAppearanceUpdate()
         observeQuery()
-      }
+      }//end of viewWillAppear
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         stopObserving()
-      }
-}
+      }//end of viewWillDisappear
+    
+    @IBAction func readyUpButton(_ sender: UIButton)
+    {
+        
+    }
+    
+    
+    
+}//end of class
 
 extension LobbyViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
@@ -112,4 +120,7 @@ extension LobbyViewController: UITableViewDataSource {
         cell.textLabel?.text = playerNames[indexPath.row].name
         return cell
     }
+    
+    
+    
 }
