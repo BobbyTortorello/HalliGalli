@@ -7,5 +7,6 @@ target 'Holli Galli' do
 
   # Pods for Holli Galli
   pod 'Firebase/Analytics'
-  
+  pod 'Firebase/Firestore'
+
 end
