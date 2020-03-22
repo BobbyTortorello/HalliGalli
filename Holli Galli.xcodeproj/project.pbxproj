@@ -16,6 +16,8 @@
 		6A7FAC582426D0190059D9D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A7FAC572426D0190059D9D2 /* Assets.xcassets */; };
 		6A7FAC5B2426D0190059D9D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A7FAC592426D0190059D9D2 /* LaunchScreen.storyboard */; };
 		6A7FAC682426DA240059D9D2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A7FAC672426DA240059D9D2 /* GoogleService-Info.plist */; };
+		6A7FAC6A2426F2340059D9D2 /* PlayerNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7FAC692426F2340059D9D2 /* PlayerNames.swift */; };
+		6A7FAC6C2426F2840059D9D2 /* LocalCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7FAC6B2426F2840059D9D2 /* LocalCollection.swift */; };
 		DCC1D39C9F4521E9882EA271 /* Pods_Holli_Galli.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D1695C7C92FA58E2EF11F4 /* Pods_Holli_Galli.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +36,8 @@
 		6A7FAC5A2426D0190059D9D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A7FAC5C2426D0190059D9D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A7FAC672426DA240059D9D2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6A7FAC692426F2340059D9D2 /* PlayerNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerNames.swift; sourceTree = "<group>"; };
+		6A7FAC6B2426F2840059D9D2 /* LocalCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalCollection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 				6A7FAC4F2426D0170059D9D2 /* ViewController.swift */,
 				6A7FAC512426D0170059D9D2 /* Main.storyboard */,
 				4775E9FF2426DFB40070FEA0 /* LobbyViewController.swift */,
+				6A7FAC692426F2340059D9D2 /* PlayerNames.swift */,
+				6A7FAC6B2426F2840059D9D2 /* LocalCollection.swift */,
 				6A7FAC572426D0190059D9D2 /* Assets.xcassets */,
 				6A7FAC592426D0190059D9D2 /* LaunchScreen.storyboard */,
 				6A7FAC5C2426D0190059D9D2 /* Info.plist */,
@@ -219,6 +225,8 @@
 				6A7FAC562426D0170059D9D2 /* Holli_Galli.xcdatamodeld in Sources */,
 				4775EA002426DFB40070FEA0 /* LobbyViewController.swift in Sources */,
 				6A7FAC502426D0170059D9D2 /* ViewController.swift in Sources */,
+				6A7FAC6A2426F2340059D9D2 /* PlayerNames.swift in Sources */,
+				6A7FAC6C2426F2840059D9D2 /* LocalCollection.swift in Sources */,
 				6A7FAC4C2426D0170059D9D2 /* AppDelegate.swift in Sources */,
 				6A7FAC4E2426D0170059D9D2 /* SceneDelegate.swift in Sources */,
 			);
