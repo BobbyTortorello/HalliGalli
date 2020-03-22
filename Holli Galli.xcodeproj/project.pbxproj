@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4775EA002426DFB40070FEA0 /* LobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4775E9FF2426DFB40070FEA0 /* LobbyViewController.swift */; };
+		47C73B5324280A6900935A5E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47C73B5224280A6900935A5E /* GoogleService-Info.plist */; };
 		6A7FAC4C2426D0170059D9D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7FAC4B2426D0170059D9D2 /* AppDelegate.swift */; };
 		6A7FAC4E2426D0170059D9D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7FAC4D2426D0170059D9D2 /* SceneDelegate.swift */; };
 		6A7FAC502426D0170059D9D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7FAC4F2426D0170059D9D2 /* ViewController.swift */; };
@@ -15,7 +16,6 @@
 		6A7FAC562426D0170059D9D2 /* Holli_Galli.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6A7FAC542426D0170059D9D2 /* Holli_Galli.xcdatamodeld */; };
 		6A7FAC582426D0190059D9D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A7FAC572426D0190059D9D2 /* Assets.xcassets */; };
 		6A7FAC5B2426D0190059D9D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A7FAC592426D0190059D9D2 /* LaunchScreen.storyboard */; };
-		6A7FAC682426DA240059D9D2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A7FAC672426DA240059D9D2 /* GoogleService-Info.plist */; };
 		6A7FAC6A2426F2340059D9D2 /* PlayerNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7FAC692426F2340059D9D2 /* PlayerNames.swift */; };
 		6A7FAC6C2426F2840059D9D2 /* LocalCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7FAC6B2426F2840059D9D2 /* LocalCollection.swift */; };
 		DCC1D39C9F4521E9882EA271 /* Pods_Holli_Galli.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D1695C7C92FA58E2EF11F4 /* Pods_Holli_Galli.framework */; };
@@ -25,6 +25,7 @@
 		00D1695C7C92FA58E2EF11F4 /* Pods_Holli_Galli.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Holli_Galli.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		08B64CA29D6D5F806EE914B6 /* Pods-Holli Galli.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Holli Galli.debug.xcconfig"; path = "Target Support Files/Pods-Holli Galli/Pods-Holli Galli.debug.xcconfig"; sourceTree = "<group>"; };
 		4775E9FF2426DFB40070FEA0 /* LobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyViewController.swift; sourceTree = "<group>"; };
+		47C73B5224280A6900935A5E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../var/folders/fn/l5xk1qkn5rs2jhn80dz5z7wh0000gn/T/com.apple.iChat/Messages/Transfers/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		65FC7A83287349D4BDCFD935 /* Pods-Holli Galli.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Holli Galli.release.xcconfig"; path = "Target Support Files/Pods-Holli Galli/Pods-Holli Galli.release.xcconfig"; sourceTree = "<group>"; };
 		6A7FAC482426D0170059D9D2 /* Holli Galli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Holli Galli.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A7FAC4B2426D0170059D9D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,7 +36,6 @@
 		6A7FAC572426D0190059D9D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A7FAC5A2426D0190059D9D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A7FAC5C2426D0190059D9D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6A7FAC672426DA240059D9D2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6A7FAC692426F2340059D9D2 /* PlayerNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerNames.swift; sourceTree = "<group>"; };
 		6A7FAC6B2426F2840059D9D2 /* LocalCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalCollection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,7 +83,7 @@
 				6A7FAC572426D0190059D9D2 /* Assets.xcassets */,
 				6A7FAC592426D0190059D9D2 /* LaunchScreen.storyboard */,
 				6A7FAC5C2426D0190059D9D2 /* Info.plist */,
-				6A7FAC672426DA240059D9D2 /* GoogleService-Info.plist */,
+				47C73B5224280A6900935A5E /* GoogleService-Info.plist */,
 				6A7FAC542426D0170059D9D2 /* Holli_Galli.xcdatamodeld */,
 			);
 			path = "Holli Galli";
@@ -167,7 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A7FAC5B2426D0190059D9D2 /* LaunchScreen.storyboard in Resources */,
-				6A7FAC682426DA240059D9D2 /* GoogleService-Info.plist in Resources */,
+				47C73B5324280A6900935A5E /* GoogleService-Info.plist in Resources */,
 				6A7FAC582426D0190059D9D2 /* Assets.xcassets in Resources */,
 				6A7FAC532426D0170059D9D2 /* Main.storyboard in Resources */,
 			);
