@@ -39,8 +39,6 @@ class LobbyViewController: UIViewController, UITableViewDelegate, SpecificPlayer
         
     @IBAction func readyUpButton(_ sender: UIButton)
     {
-        _ = playerTableView.indexPathForSelectedRow
-        
         db.collection("playerNames").document("\(defaults.object(forKey: "playerName") ?? String())").updateData([
             "playerReady": true
         ])
@@ -133,6 +131,12 @@ extension LobbyViewController: UITableViewDataSource {
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = playerNames[indexPath.row].playerName
+        
+        if playerNames[indexPath.row].playerReady == false {
+            cell.imageView?.image = UIImage(named: "notReady")
+        } else {
+            cell.imageView?.image = UIImage(named: "ready")
+        }
         return cell
     }
 }
