@@ -21,11 +21,11 @@ struct PlayerNames {
         ]
     }
     
-    var dictionaryBool: [Bool: Any] {
-        return [
-            Bool(): playerReady
-        ]
-    }
+//    var dictionaryBool: [Bool: Any] {
+//        return [
+//            Bool(): playerReady
+//        ]
+//    }
 }
 
 extension PlayerNames: DocumentSerializable {
