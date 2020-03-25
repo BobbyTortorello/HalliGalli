@@ -138,7 +138,7 @@ extension LobbyViewController: UITableViewDataSource {
             cell.imageView?.image = UIImage(named: "ready")
         }
    
-        if playerNames[indexPath.row].playerName.count > 1
+        if playerNames[indexPath.row].playerName.count > 3
             {
                 let vc = self.storyboard?.instantiateViewController(identifier: "gameVC")
                 self.navigationController?.show(vc!, sender: nil)
