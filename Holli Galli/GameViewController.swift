@@ -255,6 +255,9 @@ class GameViewController: UIViewController {
         for image in imageViewArray
         {
             image.image = UIImage(named: "B.1.1")
+            //image.transform =  CGAffineTransform(rotationAngle: -70)
         }
     }//end of placeImageView
+    
+
 }//end of class
