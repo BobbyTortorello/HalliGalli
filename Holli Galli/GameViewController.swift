@@ -12,7 +12,7 @@ import Firebase
 class GameViewController: UIViewController {
     
     private var playerNames: [PlayerNames] = []
-    var imageViewArray: [UIImageView]!
+    var imageViewArray = [UIImageView]()
     
     let db = Firestore.firestore()
 
@@ -29,8 +29,8 @@ class GameViewController: UIViewController {
 
         if playerNames.count == 1
         {
-                        let imageView = UIImageView()
-                        imageViewArray.append(imageView)
+            let imageView = UIImageView()
+            imageViewArray.append(imageView)
         }
         else if playerNames.count == 2
         {
