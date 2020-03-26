@@ -156,48 +156,105 @@ class GameViewController: UIViewController {
     
     func placeImageViews()
     {
-        for imageView in imageViewArray
+        if imageViewArray.count == 1
         {
-            if imageView == imageViewArray[0]
-            {
-                imageView.frame = CGRect(x: 20, y: 0, width: 165.75, height: 260.25)
-                view.addSubview(imageView)
-            }
-            if imageView == imageViewArray[1]
-            {
-                imageView.frame = CGRect(x: 20, y: 549, width: 165.75, height: 260.25)
-                view.addSubview(imageView)
-            }
-            if imageView == imageViewArray[2]
-            {
-                imageView.frame = CGRect(x: 321, y: 0, width: 165.75, height: 260.25)
-                view.addSubview(imageView)
-            }
-            if imageView == imageViewArray[3]
-            {
-                imageView.frame = CGRect(x: 321, y: 549, width: 165.75, height: 260.25)
-                view.addSubview(imageView)
-            }
-            if imageView == imageViewArray[4]
-            {
-                imageView.frame = CGRect(x: 619, y: 0, width: 165.75, height: 260.25)
-                view.addSubview(imageView)
-            }
-            if imageView == imageViewArray[5]
-            {
-                imageView.frame = CGRect(x: 619, y: 549, width: 165.75, height: 260.25)
-                view.addSubview(imageView)
-            }
-            if imageView == imageViewArray[6]
-            {
-                imageView.frame = CGRect(x: 894, y: 0, width: 165.75, height: 260.25)
-                view.addSubview(imageView)
-            }
-            if imageView == imageViewArray[7]
-            {
-                imageView.frame = CGRect(x: 894, y: 549, width: 165.75, height: 260.25)
-                view.addSubview(imageView)
-            }
-        }//end of for loop
+            imageViewArray[0].frame = CGRect(x: 20, y: 0, width: 165.75, height: 260.25)
+            view.addSubview(imageViewArray[0])
+        }
+        else if imageViewArray.count == 2
+        {
+            imageViewArray[0].frame = CGRect(x: 20, y: 0, width: 165.75, height: 260.25)
+            view.addSubview(imageViewArray[0])
+            imageViewArray[1].frame = CGRect(x: 20, y: 549, width: 165.75, height: 260.25)
+            view.addSubview(imageViewArray[1])
+        }
+        else if imageViewArray.count == 3
+        {
+            imageViewArray[0].frame = CGRect(x: 20, y: 0, width: 165.75, height: 260.25)
+            view.addSubview(imageViewArray[0])
+            imageViewArray[1].frame = CGRect(x: 20, y: 549, width: 165.75, height: 260.25)
+            view.addSubview(imageViewArray[1])
+            imageViewArray[2].frame = CGRect(x: 321, y: 0, width: 165.75, height: 260.25)
+            view.addSubview(imageViewArray[2])
+        }
+        else if imageViewArray.count == 4
+        {
+            imageViewArray[0].frame = CGRect(x: 20, y: 0, width: 165.75, height: 260.25)
+            view.addSubview(imageViewArray[0])
+            imageViewArray[1].frame = CGRect(x: 20, y: 549, width: 165.75, height: 260.25)
+            view.addSubview(imageViewArray[1])
+            imageViewArray[2].frame = CGRect(x: 321, y: 0, width: 165.75, height: 260.25)
+            view.addSubview(imageViewArray[2])
+            imageViewArray[3].frame = CGRect(x: 321, y: 549, width: 165.75, height: 260.25)
+            view.addSubview(imageViewArray[3])
+        }
+        else if imageViewArray.count == 5
+        {
+            imageViewArray[0].frame = CGRect(x: 20, y: 0, width: 165.75, height: 260.25)
+            view.addSubview(imageViewArray[0])
+            imageViewArray[1].frame = CGRect(x: 20, y: 549, width: 165.75, height: 260.25)
+            view.addSubview(imageViewArray[1])
+            imageViewArray[2].frame = CGRect(x: 321, y: 0, width: 165.75, height: 260.25)
+            view.addSubview(imageViewArray[2])
+            imageViewArray[3].frame = CGRect(x: 321, y: 549, width: 165.75, height: 260.25)
+            view.addSubview(imageViewArray[3])
+            imageViewArray[4].frame = CGRect(x: 619, y: 0, width: 165.75, height: 260.25)
+            view.addSubview(imageViewArray[4])
+        }
+        else if imageViewArray.count  == 6
+        {
+            imageViewArray[0].frame = CGRect(x: 20, y: 0, width: 165.75, height: 260.25)
+            view.addSubview(imageViewArray[0])
+            imageViewArray[1].frame = CGRect(x: 20, y: 549, width: 165.75, height: 260.25)
+            view.addSubview(imageViewArray[1])
+            imageViewArray[2].frame = CGRect(x: 321, y: 0, width: 165.75, height: 260.25)
+            view.addSubview(imageViewArray[2])
+            imageViewArray[3].frame = CGRect(x: 321, y: 549, width: 165.75, height: 260.25)
+            view.addSubview(imageViewArray[3])
+            imageViewArray[4].frame = CGRect(x: 619, y: 0, width: 165.75, height: 260.25)
+            view.addSubview(imageViewArray[4])
+            imageViewArray[5].frame = CGRect(x: 619, y: 549, width: 165.75, height: 260.25)
+            view.addSubview(imageViewArray[5])
+        }
+        else if imageViewArray.count  == 7
+        {
+            imageViewArray[0].frame = CGRect(x: 20, y: 0, width: 165.75, height: 260.25)
+            view.addSubview(imageViewArray[0])
+            imageViewArray[1].frame = CGRect(x: 20, y: 549, width: 165.75, height: 260.25)
+            view.addSubview(imageViewArray[1])
+            imageViewArray[2].frame = CGRect(x: 321, y: 0, width: 165.75, height: 260.25)
+            view.addSubview(imageViewArray[2])
+            imageViewArray[3].frame = CGRect(x: 321, y: 549, width: 165.75, height: 260.25)
+            view.addSubview(imageViewArray[3])
+            imageViewArray[4].frame = CGRect(x: 619, y: 0, width: 165.75, height: 260.25)
+            view.addSubview(imageViewArray[4])
+            imageViewArray[5].frame = CGRect(x: 619, y: 549, width: 165.75, height: 260.25)
+            view.addSubview(imageViewArray[5])
+            imageViewArray[6].frame = CGRect(x: 894, y: 0, width: 165.75, height: 260.25)
+            view.addSubview(imageViewArray[6])
+        }
+        else if imageViewArray.count == 8
+        {
+            imageViewArray[0].frame = CGRect(x: 20, y: 0, width: 165.75, height: 260.25)
+            view.addSubview(imageViewArray[0])
+            imageViewArray[1].frame = CGRect(x: 20, y: 549, width: 165.75, height: 260.25)
+            view.addSubview(imageViewArray[1])
+            imageViewArray[2].frame = CGRect(x: 321, y: 0, width: 165.75, height: 260.25)
+            view.addSubview(imageViewArray[2])
+            imageViewArray[3].frame = CGRect(x: 321, y: 549, width: 165.75, height: 260.25)
+            view.addSubview(imageViewArray[3])
+            imageViewArray[4].frame = CGRect(x: 619, y: 0, width: 165.75, height: 260.25)
+            view.addSubview(imageViewArray[4])
+            imageViewArray[5].frame = CGRect(x: 619, y: 549, width: 165.75, height: 260.25)
+            view.addSubview(imageViewArray[5])
+            imageViewArray[6].frame = CGRect(x: 894, y: 0, width: 165.75, height: 260.25)
+            view.addSubview(imageViewArray[6])
+            imageViewArray[7].frame = CGRect(x: 894, y: 549, width: 165.75, height: 260.25)
+            view.addSubview(imageViewArray[7])
+        }//end of if statements
+        for image in imageViewArray
+        {
+            image.image = UIImage(named: "B.1.1")
+        }
     }//end of placeImageView
 }//end of class
