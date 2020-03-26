@@ -16,11 +16,7 @@ struct PlayerName {
     static var playerReady = [QueryDocumentSnapshot]()
 }
 
-class LobbyViewController: UIViewController, UITableViewDelegate, SpecificPlayerName {
-    
-    func addingPlayerName(playerName: String) {
-        
-    }
+class LobbyViewController: UIViewController, UITableViewDelegate {
     
     private var playerName = PlayerName.playerName
     var playerReady = PlayerName.playerReady
@@ -42,6 +38,22 @@ class LobbyViewController: UIViewController, UITableViewDelegate, SpecificPlayer
         db.collection("playerNames").document("\(defaults.object(forKey: "playerName") ?? String())").updateData([
             "playerReady": true
         ])
+    }
+    
+    @IBAction func startGameButton(_ sender: UIButton) {
+//        if playerNames.count >= 3 {
+//            let vc = self.storyboard?.instantiateViewController(identifier: "gameVC")
+//            self.navigationController?.show(vc!, sender: nil)
+//        }
+        if playerNames.count <= 2 {
+            let alert = UIAlertController(title: "You need \(3 - playerNames.count) more players to start", message: "Please get more players", preferredStyle: .alert)
+            let okay = UIAlertAction(title: "Okay", style: .default, handler: nil)
+            alert.addAction(okay)
+            present(alert, animated: true, completion: nil)
+        } else {
+            let vc = self.storyboard?.instantiateViewController(identifier: "gameVC")
+            self.navigationController?.show(vc!, sender: nil)
+        }
     }
     
     //MARK: Start of FireBase Functions
@@ -139,13 +151,6 @@ extension LobbyViewController: UITableViewDataSource {
         } else {
             cell.imageView?.image = UIImage(named: "ready")
         }
-   
-        if playerNames.count > 3
-            {
-                let vc = self.storyboard?.instantiateViewController(identifier: "gameVC")
-                self.navigationController?.show(vc!, sender: nil)
-            }
         return cell
     }
-    
 }

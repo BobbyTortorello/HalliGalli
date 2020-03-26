@@ -145,7 +145,7 @@ class GameViewController: UIViewController {
         }
         else
         {
-            print("this bitch empty, YEET")
+            print(imageViewArray.count)
         }
     }//end of createImageView
     
