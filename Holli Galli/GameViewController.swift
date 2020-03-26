@@ -20,6 +20,7 @@ class GameViewController: UIViewController {
     {
         super.viewDidLoad()
         createImageView()
+
     }
     
     
@@ -138,7 +139,14 @@ class GameViewController: UIViewController {
 
 
         }
-        placeImageViews()
+        if imageViewArray.isEmpty == false
+        {
+            placeImageViews()
+        }
+        else
+        {
+            print("this bitch empty, YEET")
+        }
     }//end of createImageView
     
     func placeImageViews()
@@ -148,34 +156,42 @@ class GameViewController: UIViewController {
             if imageView == imageViewArray[0]
             {
                 imageView.frame = CGRect(x: 20, y: 0, width: 165.75, height: 260.25)
+                view.addSubview(imageView)
             }
             if imageView == imageViewArray[1]
             {
                 imageView.frame = CGRect(x: 20, y: 549, width: 165.75, height: 260.25)
+                view.addSubview(imageView)
             }
             if imageView == imageViewArray[2]
             {
                 imageView.frame = CGRect(x: 321, y: 0, width: 165.75, height: 260.25)
+                view.addSubview(imageView)
             }
             if imageView == imageViewArray[3]
             {
                 imageView.frame = CGRect(x: 321, y: 549, width: 165.75, height: 260.25)
+                view.addSubview(imageView)
             }
             if imageView == imageViewArray[4]
             {
                 imageView.frame = CGRect(x: 619, y: 0, width: 165.75, height: 260.25)
+                view.addSubview(imageView)
             }
             if imageView == imageViewArray[5]
             {
                 imageView.frame = CGRect(x: 619, y: 549, width: 165.75, height: 260.25)
+                view.addSubview(imageView)
             }
             if imageView == imageViewArray[6]
             {
                 imageView.frame = CGRect(x: 894, y: 0, width: 165.75, height: 260.25)
+                view.addSubview(imageView)
             }
             if imageView == imageViewArray[7]
             {
                 imageView.frame = CGRect(x: 894, y: 549, width: 165.75, height: 260.25)
+                view.addSubview(imageView)
             }
         }//end of for loop
     }//end of placeImageView
