@@ -119,6 +119,8 @@ class LobbyViewController: UIViewController, UITableViewDelegate, SpecificPlayer
         super.viewWillDisappear(animated)
         stopObserving()
       }//end of viewWillDisappear
+    
+
 }//end of class
 
 extension LobbyViewController: UITableViewDataSource {
@@ -138,11 +140,12 @@ extension LobbyViewController: UITableViewDataSource {
             cell.imageView?.image = UIImage(named: "ready")
         }
    
-        if playerNames[indexPath.row].playerName.count > 3
+        if playerNames.count > 3
             {
                 let vc = self.storyboard?.instantiateViewController(identifier: "gameVC")
                 self.navigationController?.show(vc!, sender: nil)
             }
         return cell
     }
+    
 }
