@@ -41,10 +41,6 @@ class LobbyViewController: UIViewController, UITableViewDelegate {
     }
     
     @IBAction func startGameButton(_ sender: UIButton) {
-//        if playerNames.count >= 3 {
-//            let vc = self.storyboard?.instantiateViewController(identifier: "gameVC")
-//            self.navigationController?.show(vc!, sender: nil)
-//        }
         if playerNames.count <= 2 {
             let alert = UIAlertController(title: "You need \(3 - playerNames.count) more players to start", message: "Please get more players", preferredStyle: .alert)
             let okay = UIAlertAction(title: "Okay", style: .default, handler: nil)
@@ -54,6 +50,8 @@ class LobbyViewController: UIViewController, UITableViewDelegate {
             let vc = self.storyboard?.instantiateViewController(identifier: "gameVC")
             self.navigationController?.show(vc!, sender: nil)
         }
+        
+        defaults.set(playerNames.count, forKey: "playerCount")
     }
     
     //MARK: Start of FireBase Functions
@@ -131,8 +129,6 @@ class LobbyViewController: UIViewController, UITableViewDelegate {
         super.viewWillDisappear(animated)
         stopObserving()
       }//end of viewWillDisappear
-    
-
 }//end of class
 
 extension LobbyViewController: UITableViewDataSource {

@@ -12,27 +12,31 @@ import Firebase
 class GameViewController: UIViewController {
     
     private var playerNames: [PlayerNames] = []
+    private var documents: [DocumentSnapshot] = []
+
     var imageViewArray = [UIImageView]()
     
     let db = Firestore.firestore()
+    
+    var playerCount = Int()
+    
+    let defaults = UserDefaults.standard
 
     override func viewDidLoad()
     {
         super.viewDidLoad()
         createImageView()
-
     }
-    
-    
+
     func createImageView()
     {
 
-        if playerNames.count == 1
+        if defaults.integer(forKey: "playerCount") == 1
         {
             let imageView = UIImageView()
             imageViewArray.append(imageView)
         }
-        else if playerNames.count == 2
+        else if defaults.integer(forKey: "playerCount") == 2
         {
             let imageView = UIImageView()
             let imageView2 = UIImageView()
@@ -40,7 +44,7 @@ class GameViewController: UIViewController {
             imageViewArray.append(imageView2)
 
         }
-        else if playerNames.count == 3
+        else if defaults.integer(forKey: "playerCount") == 3
         {
             let imageView = UIImageView()
             let imageView2 = UIImageView()
@@ -50,7 +54,7 @@ class GameViewController: UIViewController {
             imageViewArray.append(imageView2)
             imageViewArray.append(imageView3)
         }
-        else if playerNames.count == 4
+        else if defaults.integer(forKey: "playerCount") == 4
         {
             let imageView = UIImageView()
             let imageView2 = UIImageView()
@@ -63,7 +67,7 @@ class GameViewController: UIViewController {
             imageViewArray.append(imageView4)
 
         }
-        else if playerNames.count == 5
+        else if defaults.integer(forKey: "playerCount") == 5
         {
             let imageView = UIImageView()
             let imageView2 = UIImageView()
@@ -79,7 +83,7 @@ class GameViewController: UIViewController {
 
 
         }
-        else if playerNames.count == 6
+        else if defaults.integer(forKey: "playerCount") == 6
         {
             let imageView = UIImageView()
             let imageView2 = UIImageView()
@@ -97,7 +101,7 @@ class GameViewController: UIViewController {
 
 
         }
-        else if playerNames.count == 7
+        else if defaults.integer(forKey: "playerCount") == 7
         {
             let imageView = UIImageView()
             let imageView2 = UIImageView()
@@ -117,7 +121,7 @@ class GameViewController: UIViewController {
 
 
         }
-        else if playerNames.count == 8
+        else if defaults.integer(forKey: "playerCount") == 8
         {
             let imageView = UIImageView()
             let imageView2 = UIImageView()
@@ -142,10 +146,11 @@ class GameViewController: UIViewController {
         if imageViewArray.isEmpty == false
         {
             placeImageViews()
+            print("we working bitch")
         }
         else
         {
-            print(imageViewArray.count)
+            print("this bitch empty, YEET")
         }
     }//end of createImageView
     
@@ -195,6 +200,4 @@ class GameViewController: UIViewController {
             }
         }//end of for loop
     }//end of placeImageView
-    
-
 }//end of class
